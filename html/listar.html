@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cadastro de Usuários</title>
+		<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	</head>
+	<body ng-app="restAngular">
+		<div class="container">
+			<nav class="navbar navbar-default">
+			    <div class="container-fluid">
+			      	<div class="navbar-header">
+			          	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			           		<span class="sr-only">Toggle navigation</span>
+			          		<span class="icon-bar"></span>
+			          		<span class="icon-bar"></span>
+			          		<span class="icon-bar"></span>
+			          	</button>
+			         	<a class="navbar-brand" href="../home.html">Cadastro de Usuários</a>
+			       	</div>
+			       	<div id="navbar" class="navbar-collapse collapse">
+			          	<ul class="nav navbar-nav">
+			             	<li><a href="../home.html">Home</a></li>
+			             	<li><a href="cadastrar.html">Cadastrar</a></li>
+			             	<li><a href="alterar.html">Alterar</a></li>
+			             	<li class="active"><a href="#">Listar</a></li>
+			              	<li><a href="buscar.html">Buscar</a></li>
+			             	<li><a href="remover.html">Remover</a></li>
+			            </ul>			         	
+			       	</div><!--/.nav-collapse -->
+			    </div><!--/.container-fluid -->
+			</nav>
+			<div class="container-fluid" ng-controller="listUser">
+			  	<div class="row-fluid">
+			  		<div class="col-sm-offset-4 col-sm-10">
+			  			<h3>Listar todos usuários</h3>
+			   		</div>
+			  		<span class="span1">
+				    </span>
+				    <div class="table table-responsive">
+				    	<table class="table table-hover">
+					    	<thead>
+					    		<td>Código</td>
+					    		<td>Nome</td>
+					    		<td>E-mail</td>
+					    		<td>Senha</td>
+					    		<td>Sexo</td>
+					    	</thead>
+					    	<tbody>
+					    		
+					    	</tbody>
+					    </table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="../bower_components/angular-route/angular-route.min.js"></script>
+		<script type="text/javascript" src="../js/restUsers.js"></script>
+		<script type="text/javascript" src="../js/services.js"></script>
+	</body>
+</html>
